@@ -11,13 +11,13 @@ terraform {
 
 # Tells terraform on which project and region to work
 provider "google" {
-  project = "tf-project"
+  project = "tf-project-476106"
   region  = "us-central1"
 }
 
 terraform {
-    backend "gcs" {
-        bucket = "tf-state-bucket_01"
-        prefix = "project1/state"
-    }
+  backend "gcs" {
+    bucket = "tf-state-bucket_01"
+    prefix = "project1/state"
+  }
 }

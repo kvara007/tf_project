@@ -5,7 +5,7 @@ provider "google" {
 }
 
 resource "google_storage_bucket" "tf_state_bucket" {
-  name     = "tf-state-bucket_01"
+  name     = var.bucket_name
   location = "US"
   versioning {
     enabled = true
