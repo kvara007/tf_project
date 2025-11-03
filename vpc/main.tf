@@ -10,25 +10,26 @@ module "vpc" {
       subnet_name   = var.subnet1_name
       subnet_ip     = var.subnet1_cidr
       subnet_region = var.subnet1_region
-
-      secondary_ip_range = [
-    {
-      range_name = "pods-range"
-      ip_cidr_range = "10.48.0.0/14"
-    },
-    {
-      range_name = "services-range"
-      ip_cidr_range = "10.52.0.0/20"
-    }
-      ]
     },
     {
       subnet_name   = var.subnet2_name
       subnet_ip     = var.subnet2_cidr
-      subnet_region = var.subnet2_region
+      subnet_region = var.subnet2_region 
     }
   ]
 
+ secondary_ranges = {
+    "subnet1" = [
+      {
+        range_name = "pods-range"
+        ip_cidr_range = "10.48.0.0/14"
+      },
+      {
+        range_name = "services-range"
+        ip_cidr_range = "10.52.0.0/20"
+      }
+    ]
+  }
   firewall_rules = [
     {
       name      = "allow-all-internal"

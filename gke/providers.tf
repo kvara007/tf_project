@@ -18,8 +18,3 @@ provider "kubernetes" {
   # Checks cluster if it's real, before sending commands
   cluster_ca_certificate = base64decode(module.gke.ca_certificate)
 }
-
-provider "google" {
-  project = var.project_id
-  region  = var.region
-}
