@@ -9,15 +9,16 @@ terraform {
   }
 }
 
-# Tells terraform on which project and region to work
+# Tells terraform on which platform, project and region to work with
 provider "google" {
-  project = "tf-project-476106"
-  region  = "us-central1"
+  project = var.project_id
+  region  = var.region
 }
 
+# Tells terraform to use bucket for state file
 terraform {
   backend "gcs" {
-    bucket = "tf-state-bucket_01"
+    bucket = "tf-state-bucket-01abc"
     prefix = "project1/state"
   }
 }

@@ -1,15 +1,5 @@
-variable "project_id" {
-  description = "GCP project ID"
-  type        = string
-}
-
 variable "network_name" {
   description = "Name of the VPC network"
-  type        = string
-}
-
-variable "region" {
-  description = "GCP region"
   type        = string
 }
 
@@ -43,4 +33,12 @@ variable "subnet2_region" {
   description = "Region for subnet2"
   type        = string
   default     = "us-east1"
+}
+
+variable "project_id" {
+  type = string
+}
+
+variable "region" {
+  type = string
 }
