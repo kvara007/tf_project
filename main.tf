@@ -21,3 +21,13 @@ module "gke" {
   ip_range_pods = var.ip_range_pods
   node_sa       = var.node_sa
 }
+
+module "pg" {
+  database_name    = var.db_name
+  source           = "./cloudsql"
+  region           = var.region
+  project_id       = var.project_id
+  name             = var.db_name
+  network          = var.network_name
+  database_version = var.database_version
+}

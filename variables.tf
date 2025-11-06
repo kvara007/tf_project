@@ -60,3 +60,14 @@ variable "node_sa" {
   description = "Service account for GKE nodes"
   type        = string
 }
+
+
+# Cloud sql variables
+variable "database_version" {
+  type = string
+}
+
+variable "db_name" {
+  description = "Name of the cloud sql instance"
+  type        = string
+}

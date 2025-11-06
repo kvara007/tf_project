@@ -15,3 +15,7 @@ subnet2_region = "us-east1"
 name          = "alchemy-cluster"
 ip_range_pods = "pods-range"
 node_sa       = "tf-gke-alchemy-cluster-0fu2@tf-project-476106.iam.gserviceaccount.com"
+
+# Cloud sql variables
+db_name          = "alchemy-db"
+database_version = "POSTGRES_15"
