@@ -14,7 +14,7 @@ provider "kubernetes" {
 
   # Fetches user credentials
   token = data.google_client_config.default.access_token
-  
+
   # Checks cluster if it's real, before sending commands
   cluster_ca_certificate = base64decode(module.gke.ca_certificate)
 }

@@ -1,23 +1,23 @@
 variable "region" {
-    description = "Region to deploy cloud sql instance"
-    type = string
+  description = "Region to deploy cloud sql instance"
+  type        = string
 }
 
 variable "project_id" {
-    description = "Project to where deploy cloud sql instance"
-    type = string
+  description = "Project to where deploy cloud sql instance"
+  type        = string
 }
 
 variable "database_version" {
-    type = string
+  type = string
 }
 
 variable "db_name" {
-    description = "Name of the cloud sql instance"
-    type = string
+  description = "Name of the cloud sql instance"
+  type        = string
 }
 
 variable "network_name" {
-    description = "VPC for private ip"
-    type = string
+  description = "VPC for private ip"
+  type        = string
 }

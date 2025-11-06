@@ -5,7 +5,7 @@ variable "project_id" {
 
 variable "region" {
   description = "Region for GKE cluster"
-  type = string
+  type        = string
 }
 
 variable "network" {
@@ -31,5 +31,5 @@ variable "ip_range_pods" {
 
 variable "node_sa" {
   description = "Service account email used by GKE nodes"
-  type = string
+  type        = string
 }
