@@ -1,7 +1,7 @@
 provider "google" {
   project     = "tf-project-476106"
   region      = "us-central1"
-  credentials = file("../terraform_key.json")
+  credentials = file("../terraform-sa-key.json")
 }
 
 resource "google_storage_bucket" "tf_state_bucket" {
