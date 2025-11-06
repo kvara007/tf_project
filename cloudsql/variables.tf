@@ -21,3 +21,8 @@ variable "network_name" {
   description = "VPC for private ip"
   type        = string
 }
+
+variable "zone" {
+  description = "The zone where Cloud sql instance is deployed"
+  type = string
+}

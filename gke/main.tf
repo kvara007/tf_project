@@ -1,14 +1,15 @@
 module "gke" {
-  source            = "terraform-google-modules/kubernetes-engine/google"
-  project_id        = var.project_id
-  region            = var.region
-  name              = var.name
-  network           = var.network
-  subnetwork        = var.subnetwork
-  ip_range_pods     = "pods-range"
-  ip_range_services = "services-range"
-  regional          = false
-  zones             = ["us-central1-a"]
+  source              = "terraform-google-modules/kubernetes-engine/google"
+  project_id          = var.project_id
+  region              = var.region
+  name                = var.name
+  network             = var.network
+  subnetwork          = var.subnetwork
+  ip_range_pods       = "pods-range"
+  ip_range_services   = "services-range"
+  regional            = false
+  zones               = ["us-central1-a"]
+  deletion_protection = false
 
   node_pools = [
     {

@@ -29,4 +29,5 @@ module "pg" {
   region           = var.region
   database_version = var.database_version
   network_name     = var.network_name
+  zone             = var.zone
 }

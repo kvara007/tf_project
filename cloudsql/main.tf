@@ -12,7 +12,7 @@ module "pg" {
   project_id       = var.project_id
   database_version = var.database_version
   region           = var.region
-  zone             = "us-central1-a"
+  zone             = var.zone
   ip_configuration = {
     private_network = data.google_compute_network.vpc.self_link
     ipv4_enabled    = false

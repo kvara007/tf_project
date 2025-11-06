@@ -71,3 +71,8 @@ variable "db_name" {
   description = "Name of the cloud sql instance"
   type        = string
 }
+
+variable "zone" {
+  description = "Zone of cloud SQL instance"
+  type        = string
+}
