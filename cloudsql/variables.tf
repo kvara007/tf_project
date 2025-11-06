@@ -24,5 +24,5 @@ variable "network_name" {
 
 variable "zone" {
   description = "The zone where Cloud sql instance is deployed"
-  type = string
+  type        = string
 }
