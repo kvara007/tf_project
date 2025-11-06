@@ -8,6 +8,7 @@ module "pg" {
     version = "~> 26.2"
 
     name = var.db_name
+    db_name = var.db_name
     project_id = var.project_id
     database_version = var.database_version
     region = var.region

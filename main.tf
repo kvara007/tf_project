@@ -23,11 +23,10 @@ module "gke" {
 }
 
 module "pg" {
-  database_name    = var.db_name
   source           = "./cloudsql"
-  region           = var.region
+  db_name          = var.db_name
   project_id       = var.project_id
-  name             = var.db_name
-  network          = var.network_name
+  region           = var.region
   database_version = var.database_version
+  network_name     = var.network_name
 }

@@ -19,3 +19,4 @@ node_sa       = "tf-gke-alchemy-cluster-0fu2@tf-project-476106.iam.gserviceaccou
 # Cloud sql variables
 db_name          = "alchemy-db"
 database_version = "POSTGRES_15"
+
