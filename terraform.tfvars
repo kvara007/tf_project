@@ -1,5 +1,5 @@
 # Common variables
-project_id = "tf-project-476106"
+project_id = "tf-project-kvara"
 region     = "us-central1"
 
 # VPC variables
